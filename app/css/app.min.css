@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Italiana';
+  font-display: swap;
+  src: local('Italiana'), url('../font/Italiana normal.woff2') format('woff2'), url('../font/Italiana normal.woff') format('woff'), url('../font/Italiana normal.eot') format("eot"), url('../font/Italiana normal.svg') format('svg'), url('../font/Italiana normal.eot#iefix') format('embedded-opentype'), url('../font/Italiana normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpensansBold';
+  font-display: swap;
+  src: local('OpensansBold'), url('../font/bold.woff2') format('woff2'), url('../font/bold.woff') format('woff'), url('../font/bold.eot') format("eot"), url('../font/bold.svg') format('svg'), url('../font/bold.eot#iefix') format('embedded-opentype'), url('../font/bold.ttf') format('truetype');
+  font-weight: 'bold/';
+  font-style: normal;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  width: 1300px;
+}
+header {
+  color: red;
+  font-family: Italiana, sans-serif;
+}

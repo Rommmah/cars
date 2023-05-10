@@ -1,0 +1,48 @@
+- 
+	let carList = [
+		{
+			name: 'Model WHT',
+			img:''
+		},
+		{
+			name: 'Model BLK',
+			img:''
+		},
+		{
+			name: 'Model BRN',
+			img:''
+		},
+		{
+			name: 'Model GRN',
+			img:''
+		},
+	];
+
+section.cars.container
+	h2._header Модели в наличии
+
+	.cars-list
+		for item in carList
+			.car-item
+			h3._title= item.name
+			._qty
+				._qty-item
+					img(src='#')._icon
+					._text 10 А/М В НАЛИЧИИ
+				._qty-item
+					img(src='#')._icon
+					._text ЛИЗИНГ А/М
+
+			img(src=item.img)._img
+
+			._description 2.7 дизель, Common rail, 150 л.с., МКПП, Задний привод
+
+			.btns
+				button._btn.btn.btn--main Получить спец. цену
+				button._btn.btn.btn--second Спец. условия по лизингу
+				button._btn.btn.btn--second Подобрать автомобиль
+
+
+
+
+

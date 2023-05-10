@@ -1,0 +1,7 @@
+dist/
+app/images/*
+node_modules/
+ignore/
+/*.url
+*.ogv
+*.webm
