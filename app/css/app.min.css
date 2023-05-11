@@ -6,6 +6,34 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Montserrat';
+  font-display: swap;
+  src: local('Montserrat'), url('../font/Montserrat normal.woff2') format('woff2'), url('../font/Montserrat normal.woff') format('woff'), url('../font/Montserrat normal.eot') format("eot"), url('../font/Montserrat normal.svg') format('svg'), url('../font/Montserrat normal.eot#iefix') format('embedded-opentype'), url('../font/Montserrat normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  font-display: swap;
+  src: local('Gotham'), url('../font/Gotham normal.woff2') format('woff2'), url('../font/Gotham normal.woff') format('woff'), url('../font/Gotham normal.eot') format("eot"), url('../font/Gotham normal.svg') format('svg'), url('../font/Gotham normal.eot#iefix') format('embedded-opentype'), url('../font/Gotham normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  font-display: swap;
+  src: local('Gotham'), url('../font/Gotham 500.woff2') format('woff2'), url('../font/Gotham 500.woff') format('woff'), url('../font/Gotham 500.eot') format("eot"), url('../font/Gotham 500.svg') format('svg'), url('../font/Gotham 500.eot#iefix') format('embedded-opentype'), url('../font/Gotham 500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  font-display: swap;
+  src: local('Gotham'), url('../font/Gotham 700.woff2') format('woff2'), url('../font/Gotham 700.woff') format('woff'), url('../font/Gotham 700.eot') format("eot"), url('../font/Gotham 700.svg') format('svg'), url('../font/Gotham 700.eot#iefix') format('embedded-opentype'), url('../font/Gotham 700.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
   font-family: 'OpensansBold';
   font-display: swap;
   src: local('OpensansBold'), url('../font/bold.woff2') format('woff2'), url('../font/bold.woff') format('woff'), url('../font/bold.eot') format("eot"), url('../font/bold.svg') format('svg'), url('../font/bold.eot#iefix') format('embedded-opentype'), url('../font/bold.ttf') format('truetype');
@@ -43,9 +71,96 @@ img {
   overflow: hidden;
 }
 .container {
-  width: 1300px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 3em;
 }
-header {
-  color: red;
+.btn {
+  line-height: 3.1em;
+  border-radius: 3em;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.btn--main {
+  color: #fff;
+  background-color: hsl(358, 84%, 54%);
+  border-color: hsl(358, 84%, 54%);
+  padding: 0 2em;
+  cursor: pointer;
+}
+.btn--main:hover {
+  color: hsl(358, 84%, 54%);
+  border-color: hsl(358, 84%, 54%);
+  background-color: #fff;
+}
+.btn--small {
+  font-size: 0.9em;
+  line-height: 2.8em;
+  border: 1px solid #000;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+  background-color: #000;
+  background-image: url('../images/dest/header-bg.jpg');
+  background-position: right center;
+  background-size: cover;
+  color: #fff;
   font-family: Italiana, sans-serif;
+}
+.navigation-wrapper {
+  background: hsla(0, 0%, 0%, 0.3);
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  font-size: 3em;
+  line-height: 1.2em;
+  color: #fff;
+  margin: 0.3em 0;
+}
+.nav__item {
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  margin: 0 1.5em;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+.header-content__headers {
+  max-width: 40em;
+  margin-top: 5em;
+}
+.header-content__h2,
+.header-content__h3 {
+  font-family: Gotham, sans-serif;
+  margin: 0;
+}
+.header-content__h2 {
+  font-size: 3em;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+.header-content__h3 {
+  font-size: 2em;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+.header-content__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 25.75em;
+  margin-top: 7.8125em;
+  margin-bottom: 12.5em;
+}
+.header-content__input {
+  margin-bottom: 1.1875em;
 }

@@ -95,7 +95,12 @@ function buildScriptsOptimise() {
 
 function styles() {
 	// return src('app/' + preprocessor + '/*.' + preprocessor + '') // Выбираем источник: "app/sass/main.sass" или "app/less/main.less"
-	return src( ['app/' + preprocessor + '/font.' + preprocessor + '', 'app/' + preprocessor + '/global.' + preprocessor + '', 'app/' + preprocessor + '/*.' + preprocessor + ''],  {allowEmpty: true}) 
+	return src( [
+		'app/' + preprocessor + '/font.' + preprocessor + '',
+		'app/' + preprocessor + '/variable.' + preprocessor + '',
+		'app/' + preprocessor + '/global.' + preprocessor + '',
+		'app/' + preprocessor + '/*.' + preprocessor + ''
+	],  {allowEmpty: true})
 	.pipe(concat('app/css/glavniy.less'))
 	.pipe(less()) // Преобразуем значение переменной "preprocessor" в функцию
 	.pipe(concat('app.min.css')) // Конкатенируем в файл app.min.js

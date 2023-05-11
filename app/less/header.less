@@ -1,4 +1,83 @@
-header {
-	color: red;
-	font-family: @font1, sans-serif;
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+	min-height: 100vh;
+
+	background-color: #000;
+	background-image: url('../images/dest/header-bg.jpg');
+	background-position: right center;
+	background-size: cover;
+	color: #fff;
+
+	.font1;
+}
+.navigation-wrapper{
+	background: hsla(0, 0%, 0%, 0.3);
+}
+.navigation{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#logo{
+	font-size: 3em;
+	line-height: 1.2em;
+	color: #fff;
+
+	margin: 0.3em 0;
+}
+.nav{
+	&__item{
+		.font2;
+		color: #fff;
+
+		margin: 0 1.5em;
+	}
+}
+.header-content{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+	width: 100%;
+
+	&__headers{
+		max-width: 40em;
+
+		margin-top: 5em;
+	}
+
+	&__h2, &__h3{
+		.font3;
+		margin: 0;
+	}
+	&__h2{
+		font-size: 3em;
+		line-height: 1.2em;
+		font-weight: 700;
+	}
+	&__h3{
+		font-size: 2em;
+		line-height: 1.2em;
+		font-weight: 400;
+	}
+
+	&__form{
+		display: flex;
+		flex-direction: column;
+
+		.pxToEm(412);
+		max-width: @pxToEm;
+
+		.pxToEm2(125);
+		margin-top: @pxToEm2;
+		.pxToEm3(200);
+		margin-bottom: @pxToEm3;
+	}
+	&__input{
+		.pxToEm(19);
+		margin-bottom: @pxToEm;
+	}
 }

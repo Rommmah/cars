@@ -2,19 +2,19 @@
 	let carList = [
 		{
 			name: 'Model WHT',
-			img:''
+			img:'images/dest/car1.png'
 		},
 		{
 			name: 'Model BLK',
-			img:''
+			img:'images/dest/car2.png'
 		},
 		{
 			name: 'Model BRN',
-			img:''
+			img:'images/dest/car3.png'
 		},
 		{
 			name: 'Model GRN',
-			img:''
+			img:'images/dest/car4.png'
 		},
 	];
 
@@ -27,10 +27,10 @@ section.cars.container
 			h3._title= item.name
 			._qty
 				._qty-item
-					img(src='#')._icon
+					+svg("#car", "car-item__icon", '20')
 					._text 10 А/М В НАЛИЧИИ
 				._qty-item
-					img(src='#')._icon
+					+svg("#clock", "car-item__icon", '20')
 					._text ЛИЗИНГ А/М
 
 			img(src=item.img)._img
