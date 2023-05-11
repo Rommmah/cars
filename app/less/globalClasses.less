@@ -14,13 +14,15 @@
   cursor: pointer;
 }
 .btn--main{
+  font-size: 1em;
+
   color: #fff;
   background-color: @mainColor;
   border-color: @mainColor;
 
   padding: 0 2em;
 
-  &:hover{
+  &:hover, &:active{
     color: @mainColor;
     border-color: @mainColor;
     background-color: #fff;
@@ -32,9 +34,13 @@
 
   border: 1px solid #000;
 
-  &:hover{
+  &:hover, &:active{
     color: #fff;
     background-color: @mainColor;
     border-color: @mainColor;
   }
+}
+.btn--success{
+  background-color: hsla(144, 85%, 38%, 1);
+  border-color: hsla(144, 85%, 38%, 1);
 }

@@ -1,0 +1,25 @@
+.modal-wrapper
+    .modal.hidden
+        img(src="../images/dest/cross.png" alt="cross icon")._cross
+
+        h3._header Заголовок формы
+        ._text Мы перезвоним вам и ответим на любой вопрос
+
+        form._form
+            input(placeholder="Ваше имя").btn._input
+            input(placeholder="+7 (___) ___-__-__").btn._input
+            button._btn.btn.btn--main Отправить заявку
+
+        small._small Нажимая кнопку я подтверждаю свое ознакомление с порядком обработки персональных данных со стороны КОМПАНИИ и даю свободное и осознанное согласие на их обработку, на получение информации по каналам связи, в том числе в рекламных целях.
+            br
+            a(href="#")._link Подробно тут
+
+    .modal.message.hidden
+        h3._header.-message Ваша Заявка успешно отправлена
+        p._text.-message менеджер свяжется с Вами в ближайшее время
+        button.btn.-main._btn.-message#success На главную
+
+    .modal.message
+        h3._header.-message Ошибка при отправке
+        p._text.-message попробуйте отправить заявку заново
+        button.btn.-main._btn.-message#error Повторить

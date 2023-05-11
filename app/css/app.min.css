@@ -55,6 +55,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'NobelWGL';
+  font-display: swap;
+  src: local('NobelWGL'), url('../font/NobelWGL normal.woff2') format('woff2'), url('../font/NobelWGL normal.woff') format('woff'), url('../font/NobelWGL normal.eot') format("eot"), url('../font/NobelWGL normal.svg') format('svg'), url('../font/NobelWGL normal.eot#iefix') format('embedded-opentype'), url('../font/NobelWGL normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'OpensansBold';
   font-display: swap;
   src: local('OpensansBold'), url('../font/bold.woff2') format('woff2'), url('../font/bold.woff') format('woff'), url('../font/bold.eot') format("eot"), url('../font/bold.svg') format('svg'), url('../font/bold.eot#iefix') format('embedded-opentype'), url('../font/bold.ttf') format('truetype');
@@ -105,12 +112,14 @@ img {
   cursor: pointer;
 }
 .btn--main {
+  font-size: 1em;
   color: #fff;
   background-color: hsl(358, 84%, 54%);
   border-color: hsl(358, 84%, 54%);
   padding: 0 2em;
 }
-.btn--main:hover {
+.btn--main:hover,
+.btn--main:active {
   color: hsl(358, 84%, 54%);
   border-color: hsl(358, 84%, 54%);
   background-color: #fff;
@@ -120,10 +129,15 @@ img {
   line-height: 2.8em;
   border: 1px solid #000;
 }
-.btn--second:hover {
+.btn--second:hover,
+.btn--second:active {
   color: #fff;
   background-color: hsl(358, 84%, 54%);
   border-color: hsl(358, 84%, 54%);
+}
+.btn--success {
+  background-color: hsl(144, 85%, 38%);
+  border-color: hsl(144, 85%, 38%);
 }
 .cars__header {
   font-family: Gotham, sans-serif;
@@ -182,6 +196,17 @@ img {
 }
 .car-item__btn.btn--main {
   font-size: 0.9em;
+}
+.footer {
+  max-width: 47.5em;
+  margin: 2.5em auto;
+}
+.footer__text {
+  font-family: NobelWGL, sans-serif;
+  font-size: 1.25em;
+  line-height: 92%;
+  text-align: center;
+  margin-bottom: 0.6em;
 }
 .header {
   display: flex;
@@ -256,6 +281,82 @@ img {
 .map__frame {
   width: 100%;
   height: 37.5em;
+}
+.modal-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: Gotham, sans-serif;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.modal {
+  width: 35.4375em;
+  max-width: 98%;
+  padding: 3%;
+  border-radius: 1.25em;
+  background-color: #fff;
+  position: relative;
+}
+.modal__cross {
+  position: absolute;
+  right: 1.3em;
+  top: 1.3em;
+  cursor: pointer;
+}
+.modal__header {
+  font-size: 1.875em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.modal__header--message {
+  margin-bottom: 0;
+}
+.modal__text {
+  text-align: center;
+}
+.modal__text--message {
+  font-size: 1.25em;
+  margin-top: 1em;
+}
+.modal__btn,
+.modal__input {
+  display: block;
+  width: 100%;
+  margin: 2em 0;
+}
+.modal__btn--message {
+  width: 25.75em;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 3.75em;
+}
+.modal__input {
+  text-align: left;
+  padding-left: 2em;
+  background: hsla(0, 0%, 0%, 0.05);
+  border: 1px solid hsla(0, 0%, 0%, 0.2);
+}
+.modal__small {
+  font-size: 0.75em;
+}
+.modal__link {
+  text-decoration: underline;
+  color: #000;
+}
+.message {
+  width: 58.375em;
+  text-align: center;
+  padding: 7%;
+}
+.hidden {
+  display: none;
 }
 .questions {
   font-family: Gotham, sans-serif;

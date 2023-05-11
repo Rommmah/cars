@@ -11,6 +11,7 @@
   font-weight: @weight;
   font-style: @style;
 }
+
 .pxToEm(@px, @base: @fontSize){
   @pxToEm: @px / @base + 0em;
 }
@@ -19,6 +20,12 @@
 }
 .pxToEm3(@px, @base: @fontSize){
   @pxToEm3: @px / @base + 0em;
+}
+
+.center(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
