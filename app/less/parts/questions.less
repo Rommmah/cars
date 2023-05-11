@@ -1,0 +1,47 @@
+.questions{
+  .font3;
+  .pxToEm(125);
+  text-align: center;
+
+  margin-top: @pxToEm;
+
+  background-image: linear-gradient(0deg, rgba(128, 128, 128, 0) 0%, rgba(128, 128, 128, 0.2) 100%);
+
+  @radius: 50 / @fontSize + 0em;
+  border-radius: @radius @radius 0 0;
+
+  padding: @radius;
+
+  &__header{
+    font-size: 3em;
+    font-weight: 400;
+  }
+
+  &__text{
+    margin-top: 1em;
+  }
+
+  &__form{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 66 / @fontSize + 0em 0;
+  }
+
+  &__input{
+    flex-grow: 1;
+    text-align: left;
+
+    margin-right: 1em;
+    padding-left: 2em;
+
+    background-color: hsla(0, 0%, 100%, 0.05);
+    border: 1px solid hsla(0, 0%, 0%, 0.2);
+  }
+
+  &__small-text{
+    font-size: 12 / @fontSize + 0em;
+    line-height: calc(14.4 / 12);
+    color: hsla(0, 0%, 47%, 1);
+  }
+}

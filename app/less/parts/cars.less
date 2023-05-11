@@ -1,0 +1,80 @@
+.cars__header{
+  .font3;
+
+  .pxToEm(30);
+  font-size: @pxToEm;
+  text-transform: uppercase;
+
+  .pxToEm2(80, 30);
+  margin-top: @pxToEm2;
+}
+
+.cars-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280 / @fontSize + 0em, 1fr) );
+  .pxToEm(23);
+  grid-gap: @pxToEm;
+
+  .pxToEm2(57);
+  margin-top: @pxToEm2;
+}
+
+.car-item{
+  .font2;
+
+  background: #FDFDFD;
+  border: 2px solid #F4F4F4;
+  border-radius: 20px;
+
+  padding: 1.5em;
+
+  &__title{
+    font-weight: 700;
+    margin-top: 0.5em;
+  }
+
+  &__qty{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 1.5em;
+    margin-bottom: 2.2em;
+  }
+  &__qty-item{
+    display: flex;
+    align-items: center;
+    //margin-right: 0.7em;
+  }
+  &__text{
+    font-size: 10 / 16 + 0em;
+    font-weight: 700;
+    margin-left: 0.5em;
+  }
+
+  &__img{
+    .pxToEm(123);
+    height: @pxToEm;
+  }
+
+  &__description{
+    font-weight: 500;
+    font-size: 0.7em;
+    .pxToEm(14.6);
+    line-height: @pxToEm;
+
+    margin-top: 0.7em;
+  }
+
+  &__form{
+    margin-top: 25 / 16 + 0em;
+  }
+  &__btn{
+    width: 100%;
+    margin-top: 0.8em;
+
+    font-weight: 600;
+  }
+  &__btn.btn--main{
+    font-size: 0.9em;
+  }
+}

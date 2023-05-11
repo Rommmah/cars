@@ -99,7 +99,8 @@ function styles() {
 		'app/' + preprocessor + '/font.' + preprocessor + '',
 		'app/' + preprocessor + '/variable.' + preprocessor + '',
 		'app/' + preprocessor + '/global.' + preprocessor + '',
-		'app/' + preprocessor + '/*.' + preprocessor + ''
+		'app/' + preprocessor + '/*.' + preprocessor + '',
+		'app/' + preprocessor + '/parts/*.' + preprocessor + '',
 	],  {allowEmpty: true})
 	.pipe(concat('app/css/glavniy.less'))
 	.pipe(less()) // Преобразуем значение переменной "preprocessor" в функцию
