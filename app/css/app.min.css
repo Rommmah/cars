@@ -1,70 +1,70 @@
 @font-face {
   font-family: 'Italiana';
   font-display: swap;
-  src: local('Italiana'), url('../font/Italiana normal.woff2') format('woff2'), url('../font/Italiana normal.woff') format('woff'), url('../font/Italiana normal.eot') format("eot"), url('../font/Italiana normal.svg') format('svg'), url('../font/Italiana normal.eot#iefix') format('embedded-opentype'), url('../font/Italiana normal.ttf') format('truetype');
+  src: local('Italiana'), url('../font/Italiana normal.eot') format("eot"), url('../font/Italiana normal.svg') format('svg'), url('../font/Italiana normal.eot#iefix') format('embedded-opentype'), url('../font/Italiana normal.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat';
   font-display: swap;
-  src: local('Montserrat'), url('../font/Montserrat normal.woff2') format('woff2'), url('../font/Montserrat normal.woff') format('woff'), url('../font/Montserrat normal.eot') format("eot"), url('../font/Montserrat normal.svg') format('svg'), url('../font/Montserrat normal.eot#iefix') format('embedded-opentype'), url('../font/Montserrat normal.ttf') format('truetype');
+  src: local('Montserrat'), url('../font/Montserrat normal.eot') format("eot"), url('../font/Montserrat normal.svg') format('svg'), url('../font/Montserrat normal.eot#iefix') format('embedded-opentype'), url('../font/Montserrat normal.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat';
   font-display: swap;
-  src: local('Montserrat'), url('../font/Montserrat 500.woff2') format('woff2'), url('../font/Montserrat 500.woff') format('woff'), url('../font/Montserrat 500.eot') format("eot"), url('../font/Montserrat 500.svg') format('svg'), url('../font/Montserrat 500.eot#iefix') format('embedded-opentype'), url('../font/Montserrat 500.ttf') format('truetype');
+  src: local('Montserrat'), url('../font/Montserrat 500.eot') format("eot"), url('../font/Montserrat 500.svg') format('svg'), url('../font/Montserrat 500.eot#iefix') format('embedded-opentype'), url('../font/Montserrat 500.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat';
   font-display: swap;
-  src: local('Montserrat'), url('../font/Montserrat 600.woff2') format('woff2'), url('../font/Montserrat 600.woff') format('woff'), url('../font/Montserrat 600.eot') format("eot"), url('../font/Montserrat 600.svg') format('svg'), url('../font/Montserrat 600.eot#iefix') format('embedded-opentype'), url('../font/Montserrat 600.ttf') format('truetype');
+  src: local('Montserrat'), url('../font/Montserrat 600.eot') format("eot"), url('../font/Montserrat 600.svg') format('svg'), url('../font/Montserrat 600.eot#iefix') format('embedded-opentype'), url('../font/Montserrat 600.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat';
   font-display: swap;
-  src: local('Montserrat'), url('../font/Montserrat 700.woff2') format('woff2'), url('../font/Montserrat 700.woff') format('woff'), url('../font/Montserrat 700.eot') format("eot"), url('../font/Montserrat 700.svg') format('svg'), url('../font/Montserrat 700.eot#iefix') format('embedded-opentype'), url('../font/Montserrat 700.ttf') format('truetype');
+  src: local('Montserrat'), url('../font/Montserrat 700.eot') format("eot"), url('../font/Montserrat 700.svg') format('svg'), url('../font/Montserrat 700.eot#iefix') format('embedded-opentype'), url('../font/Montserrat 700.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'Gotham';
   font-display: swap;
-  src: local('Gotham'), url('../font/Gotham normal.woff2') format('woff2'), url('../font/Gotham normal.woff') format('woff'), url('../font/Gotham normal.eot') format("eot"), url('../font/Gotham normal.svg') format('svg'), url('../font/Gotham normal.eot#iefix') format('embedded-opentype'), url('../font/Gotham normal.ttf') format('truetype');
+  src: local('Gotham'), url('../font/Gotham normal.eot') format("eot"), url('../font/Gotham normal.svg') format('svg'), url('../font/Gotham normal.eot#iefix') format('embedded-opentype'), url('../font/Gotham normal.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Gotham';
   font-display: swap;
-  src: local('Gotham'), url('../font/Gotham 500.woff2') format('woff2'), url('../font/Gotham 500.woff') format('woff'), url('../font/Gotham 500.eot') format("eot"), url('../font/Gotham 500.svg') format('svg'), url('../font/Gotham 500.eot#iefix') format('embedded-opentype'), url('../font/Gotham 500.ttf') format('truetype');
+  src: local('Gotham'), url('../font/Gotham 500.eot') format("eot"), url('../font/Gotham 500.svg') format('svg'), url('../font/Gotham 500.eot#iefix') format('embedded-opentype'), url('../font/Gotham 500.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'Gotham';
   font-display: swap;
-  src: local('Gotham'), url('../font/Gotham 700.woff2') format('woff2'), url('../font/Gotham 700.woff') format('woff'), url('../font/Gotham 700.eot') format("eot"), url('../font/Gotham 700.svg') format('svg'), url('../font/Gotham 700.eot#iefix') format('embedded-opentype'), url('../font/Gotham 700.ttf') format('truetype');
+  src: local('Gotham'), url('../font/Gotham 700.eot') format("eot"), url('../font/Gotham 700.svg') format('svg'), url('../font/Gotham 700.eot#iefix') format('embedded-opentype'), url('../font/Gotham 700.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'NobelWGL';
   font-display: swap;
-  src: local('NobelWGL'), url('../font/NobelWGL normal.woff2') format('woff2'), url('../font/NobelWGL normal.woff') format('woff'), url('../font/NobelWGL normal.eot') format("eot"), url('../font/NobelWGL normal.svg') format('svg'), url('../font/NobelWGL normal.eot#iefix') format('embedded-opentype'), url('../font/NobelWGL normal.ttf') format('truetype');
+  src: local('NobelWGL'), url('../font/NobelWGL normal.eot') format("eot"), url('../font/NobelWGL normal.svg') format('svg'), url('../font/NobelWGL normal.eot#iefix') format('embedded-opentype'), url('../font/NobelWGL normal.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'OpensansBold';
   font-display: swap;
-  src: local('OpensansBold'), url('../font/bold.woff2') format('woff2'), url('../font/bold.woff') format('woff'), url('../font/bold.eot') format("eot"), url('../font/bold.svg') format('svg'), url('../font/bold.eot#iefix') format('embedded-opentype'), url('../font/bold.ttf') format('truetype');
+  src: local('OpensansBold'), url('../font/bold.eot') format("eot"), url('../font/bold.svg') format('svg'), url('../font/bold.eot#iefix') format('embedded-opentype'), url('../font/bold.ttf') format('truetype');
   font-weight: 'bold/';
   font-style: normal;
 }
@@ -112,6 +112,7 @@ img {
   cursor: pointer;
 }
 .btn--main {
+  font-family: Montserrat, sans-serif;
   font-size: 1em;
   color: #fff;
   background-color: hsl(358, 84%, 54%);
@@ -123,6 +124,17 @@ img {
   color: hsl(358, 84%, 54%);
   border-color: hsl(358, 84%, 54%);
   background-color: #fff;
+}
+.btn--main:disabled {
+  filter: brightness(70%);
+  scale: 0.95;
+  cursor: auto;
+}
+.btn--main:disabled:hover,
+.btn--main:disabled:active {
+  color: #fff;
+  background-color: hsl(358, 84%, 54%);
+  border-color: hsl(358, 84%, 54%);
 }
 .btn--second {
   font-size: 0.9em;
@@ -138,6 +150,13 @@ img {
 .btn--success {
   background-color: hsl(144, 85%, 38%);
   border-color: hsl(144, 85%, 38%);
+}
+input.input--error {
+  border-color: red;
+}
+.error-message {
+  color: red;
+  text-align: center;
 }
 .cars__header {
   font-family: Gotham, sans-serif;
@@ -282,7 +301,7 @@ img {
   width: 100%;
   height: 37.5em;
 }
-.modal-wrapper {
+#modal-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,7 +309,7 @@ img {
   height: 100%;
   font-family: Gotham, sans-serif;
   background-color: hsla(0, 0%, 0%, 0.5);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
@@ -302,6 +321,7 @@ img {
   border-radius: 1.25em;
   background-color: #fff;
   position: relative;
+  display: none;
 }
 .modal__cross {
   position: absolute;
@@ -355,8 +375,8 @@ img {
   text-align: center;
   padding: 7%;
 }
-.hidden {
-  display: none;
+.shown {
+  display: block;
 }
 .questions {
   font-family: Gotham, sans-serif;
@@ -376,7 +396,11 @@ img {
 .questions__form {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 4.125em 0;
+}
+.questions__form .error-message {
+  width: 100%;
 }
 .questions__input {
   flex-grow: 1;
@@ -385,6 +409,11 @@ img {
   padding-left: 2em;
   background-color: hsla(0, 0%, 100%, 0.05);
   border: 1px solid hsla(0, 0%, 0%, 0.2);
+}
+.questions__btn {
+  flex-grow: 1;
+  white-space: nowrap;
+  min-width: 17em;
 }
 .questions__small-text {
   font-size: 0.75em;

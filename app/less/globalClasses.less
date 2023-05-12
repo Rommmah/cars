@@ -14,6 +14,7 @@
   cursor: pointer;
 }
 .btn--main{
+  .font2;
   font-size: 1em;
 
   color: #fff;
@@ -26,6 +27,18 @@
     color: @mainColor;
     border-color: @mainColor;
     background-color: #fff;
+  }
+
+  &:disabled{
+    filter: brightness(70%);
+    scale: 0.95;
+    cursor: auto;
+
+    &:hover, &:active{
+      color: #fff;
+      background-color: @mainColor;
+      border-color: @mainColor;
+    }
   }
 }
 .btn--second{
@@ -43,4 +56,12 @@
 .btn--success{
   background-color: hsla(144, 85%, 38%, 1);
   border-color: hsla(144, 85%, 38%, 1);
+}
+
+input.input--error{
+  border-color: red;
+}
+.error-message{
+  color: red;
+  text-align: center;
 }

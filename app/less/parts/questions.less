@@ -24,8 +24,14 @@
   &__form{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     margin: 66 / @fontSize + 0em 0;
+
+    & .error-message{
+      width: 100%;
+      //text-align: right;
+    }
   }
 
   &__input{
@@ -37,6 +43,12 @@
 
     background-color: hsla(0, 0%, 100%, 0.05);
     border: 1px solid hsla(0, 0%, 0%, 0.2);
+  }
+
+  &__btn{
+    flex-grow: 1;
+    white-space: nowrap;
+    min-width: 17em;
   }
 
   &__small-text{

@@ -5,3 +5,5 @@ ignore/
 /*.url
 *.ogv
 *.webm
+api/
+app/api

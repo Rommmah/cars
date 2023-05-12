@@ -7,7 +7,7 @@ header.header
 				for item in [1, 2, 3]
 					a(href='#')._item= 'Пункт меню ' + item
 
-			._call.btn.btn--main Обратный звонок
+			.btn.-main._call.show-modal Обратный звонок
 
 	.header-content.container
 		._headers
@@ -15,7 +15,8 @@ header.header
 			h3._h3 ПРЕМИАЛЬНОЕ КАЧЕСТВО ПО ДОСТУПНЫМ ЦЕНАМ.
 
 		form._form
-			input(placeholder="+7 (___) - __ -  __").btn._input
-			button.btn.btn--main Обратный звонок
+			input(placeholder="+7 (___) - __ -  __" name="phone").btn._input
+			.error-message.visually-hidden Необходимо указать номер телефона
+			button.btn.-main.send-btn Обратный звонок
 
 

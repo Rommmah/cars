@@ -1,25 +1,26 @@
-.modal-wrapper
-    .modal.hidden
+#modal-wrapper.visually-hidden
+    .modal.shown#showForm
         img(src="../images/dest/cross.png" alt="cross icon")._cross
 
         h3._header Заголовок формы
         ._text Мы перезвоним вам и ответим на любой вопрос
 
         form._form
-            input(placeholder="Ваше имя").btn._input
-            input(placeholder="+7 (___) ___-__-__").btn._input
-            button._btn.btn.btn--main Отправить заявку
+            input(placeholder="Ваше имя" name="name").btn._input
+            input(placeholder="+7 (___) ___-__-__" name="phone").btn._input
+            .error-message.visually-hidden Необходимо заполнить все поля
+            button.btn.-main._btn.send-btn Отправить заявку
 
         small._small Нажимая кнопку я подтверждаю свое ознакомление с порядком обработки персональных данных со стороны КОМПАНИИ и даю свободное и осознанное согласие на их обработку, на получение информации по каналам связи, в том числе в рекламных целях.
             br
             a(href="#")._link Подробно тут
 
-    .modal.message.hidden
+    .modal.-success.message#success-modal
         h3._header.-message Ваша Заявка успешно отправлена
         p._text.-message менеджер свяжется с Вами в ближайшее время
-        button.btn.-main._btn.-message#success На главную
+        a(href="index.html").btn.-main._btn.-message#success-btn На главную
 
-    .modal.message
+    .modal.-error.message#error-modal
         h3._header.-message Ошибка при отправке
         p._text.-message попробуйте отправить заявку заново
-        button.btn.-main._btn.-message#error Повторить
+        button.btn.-main._btn.-message#error-btn Повторить
