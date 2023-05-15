@@ -172,6 +172,7 @@ input.input--error {
 }
 .car-item {
   font-family: Montserrat, sans-serif;
+  color: #000000;
   background: #FDFDFD;
   border: 2px solid #F4F4F4;
   border-radius: 20px;
@@ -233,7 +234,7 @@ input.input--error {
   align-items: stretch;
   min-height: 100vh;
   background-color: #000;
-  background-image: url('../../images/dest/header-bg.jpg');
+  background-image: url('../images/dest/header-bg.jpg');
   background-position: right center;
   background-size: cover;
   color: #fff;
@@ -419,4 +420,30 @@ input.input--error {
   font-size: 0.75em;
   line-height: calc(14.4 / 12);
   color: hsl(0, 0%, 47%);
+}
+.description-wrapper {
+  font-family: Gotham, sans-serif;
+}
+.car-item__header {
+  text-align: center;
+  margin: 1em auto;
+}
+.description {
+  font-size: 1.3em;
+}
+.description__header {
+  text-align: center;
+  margin: 1em auto;
+  color: mediumblue;
+}
+.description__img {
+  display: block;
+  margin: 1em auto;
+}
+.description__item {
+  margin: 0.5em;
+  color: #333;
+}
+.description__name {
+  color: mediumblue;
 }

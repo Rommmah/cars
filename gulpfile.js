@@ -77,6 +77,7 @@ function scripts() {
 	return src([ // Берём файлы из источников
 		// 'node_modules/jquery/dist/jquery.min.js', // Пример подключения библиотеки
 		'app/js/**/*.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
+		'!app/js/3 car.js', // исключаем данный файл
 		'!app/js/app.min.js'
 		], {allowEmpty: true})
 	.pipe(concat('app.min.js')) // Конкатенируем в один файл
@@ -101,6 +102,7 @@ function styles() {
 		'app/' + preprocessor + '/global.' + preprocessor + '',
 		'app/' + preprocessor + '/*.' + preprocessor + '',
 		'app/' + preprocessor + '/parts/*.' + preprocessor + '',
+		'app/' + preprocessor + '/**/*.' + preprocessor + '',
 	],  {allowEmpty: true})
 	.pipe(concat('app/css/glavniy.less'))
 	.pipe(less()) // Преобразуем значение переменной "preprocessor" в функцию
@@ -243,7 +245,9 @@ exports.pugy = pugy;
 
 // Создаём новый таск "build", который последовательно выполняет нужные операции
 exports.build = series(cleandist, styles, scripts, images, buildcopy, 
-	buildScriptsOptimise, buildStylesOpt, buildHtmlOptimisation); // последние три функции добавил для сжатия документов уже посел переноса в Dist!
+	buildStylesOpt, buildHtmlOptimisation); // последние три функции добавил для сжатия документов уже посел переноса в Dist!
+// exports.build = series(cleandist, styles, scripts, images, buildcopy,
+// 	buildScriptsOptimise, buildStylesOpt, buildHtmlOptimisation); // последние три функции добавил для сжатия документов уже посел переноса в Dist!
 
 // Экспортируем дефолтный таск с нужным набором функций
 exports.default = parallel(styles, scripts, browsersync, startwatch);

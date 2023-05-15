@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <link rel="stylesheet" href="./css/app.min.css">
-    <title>proContext</title>
-    <meta name="description" content="Тестовое задание для proContext">
+    <title>test</title>
+    <meta name="description" content="Тестовое задание">
   </head>
   <body>
     <header class="header"> 
@@ -31,97 +31,48 @@
     <main>
       <section class="cars container">
         <h2 class="cars__header">Модели в наличии</h2>
-        <div class="cars-list">
-          <div class="car-item">
-            <h3 class="car-item__title">Model WHT</h3>
-            <div class="car-item__qty">
-              <div class="car-item__qty-item">
-                <svg class="car-item__icon" width="20" height="20">
-                  <use href="#car"></use>
-                </svg><span class="car-item__text">10 А/М В НАЛИЧИИ</span>
-              </div>
-              <div class="car-item__qty-item">
-                <svg class="car-item__icon" width="20" height="20">
-                  <use href="#clock"></use>
-                </svg><span class="car-item__text">ЛИЗИНГ А/М</span>
-              </div>
-            </div><img class="car-item__img" src="images/dest/car1.png">
-            <div class="car-item__description">2.7 дизель, Common rail, 150 л.с., МКПП, Задний привод</div>
-            <form class="car-item__form">
-              <input class="visually-hidden" value="2" name="id">
-              <button class="btn btn--main car-item__btn show-modal">Получить спец. цену</button>
-              <button class="btn btn--second car-item__btn show-modal">Спец. условия по лизингу</button>
-              <button class="btn btn--second car-item__btn show-modal">Подобрать автомобиль</button>
-            </form>
-          </div>
-          <div class="car-item">
-            <h3 class="car-item__title">Model BLK</h3>
-            <div class="car-item__qty">
-              <div class="car-item__qty-item">
-                <svg class="car-item__icon" width="20" height="20">
-                  <use href="#car"></use>
-                </svg><span class="car-item__text">10 А/М В НАЛИЧИИ</span>
-              </div>
-              <div class="car-item__qty-item">
-                <svg class="car-item__icon" width="20" height="20">
-                  <use href="#clock"></use>
-                </svg><span class="car-item__text">ЛИЗИНГ А/М</span>
-              </div>
-            </div><img class="car-item__img" src="images/dest/car2.png">
-            <div class="car-item__description">2.7 дизель, Common rail, 150 л.с., МКПП, Задний привод</div>
-            <form class="car-item__form">
-              <input class="visually-hidden" value="2" name="id">
-              <button class="btn btn--main car-item__btn show-modal">Получить спец. цену</button>
-              <button class="btn btn--second car-item__btn show-modal">Спец. условия по лизингу</button>
-              <button class="btn btn--second car-item__btn show-modal">Подобрать автомобиль</button>
-            </form>
-          </div>
-          <div class="car-item">
-            <h3 class="car-item__title">Model BRN</h3>
-            <div class="car-item__qty">
-              <div class="car-item__qty-item">
-                <svg class="car-item__icon" width="20" height="20">
-                  <use href="#car"></use>
-                </svg><span class="car-item__text">10 А/М В НАЛИЧИИ</span>
-              </div>
-              <div class="car-item__qty-item">
-                <svg class="car-item__icon" width="20" height="20">
-                  <use href="#clock"></use>
-                </svg><span class="car-item__text">ЛИЗИНГ А/М</span>
-              </div>
-            </div><img class="car-item__img" src="images/dest/car3.png">
-            <div class="car-item__description">2.7 дизель, Common rail, 150 л.с., МКПП, Задний привод</div>
-            <form class="car-item__form">
-              <input class="visually-hidden" value="2" name="id">
-              <button class="btn btn--main car-item__btn show-modal">Получить спец. цену</button>
-              <button class="btn btn--second car-item__btn show-modal">Спец. условия по лизингу</button>
-              <button class="btn btn--second car-item__btn show-modal">Подобрать автомобиль</button>
-            </form>
-          </div>
-          <div class="car-item">
-            <h3 class="car-item__title">Model GRN</h3>
-            <div class="car-item__qty">
-              <div class="car-item__qty-item">
-                <svg class="car-item__icon" width="20" height="20">
-                  <use href="#car"></use>
-                </svg><span class="car-item__text">10 А/М В НАЛИЧИИ</span>
-              </div>
-              <div class="car-item__qty-item">
-                <svg class="car-item__icon" width="20" height="20">
-                  <use href="#clock"></use>
-                </svg><span class="car-item__text">ЛИЗИНГ А/М</span>
-              </div>
-            </div><img class="car-item__img" src="images/dest/car4.png">
-            <div class="car-item__description">2.7 дизель, Common rail, 150 л.с., МКПП, Задний привод</div>
-            <form class="car-item__form">
-              <input class="visually-hidden" value="2" name="id">
-              <button class="btn btn--main car-item__btn show-modal">Получить спец. цену</button>
-              <button class="btn btn--second car-item__btn show-modal">Спец. условия по лизингу</button>
-              <button class="btn btn--second car-item__btn show-modal">Подобрать автомобиль</button>
-            </form>
-          </div>
-        </div>
+        <div class="cars-list"></div>
       </section>
+      <!-- --->
+      <!-- 	let carList = [-->
+      <!-- 		{-->
+      <!-- 			name: 'Model WHT',-->
+      <!-- 			img:'images/dest/car1.png'-->
+      <!-- 		},-->
+      <!-- 		{-->
+      <!-- 			name: 'Model BLK',-->
+      <!-- 			img:'images/dest/car2.png'-->
+      <!-- 		},-->
+      <!-- 		{-->
+      <!-- 			name: 'Model BRN',-->
+      <!-- 			img:'images/dest/car3.png'-->
+      <!-- 		},-->
+      <!-- 		{-->
+      <!-- 			name: 'Model GRN',-->
+      <!-- 			img:'images/dest/car4.png'-->
+      <!-- 		},-->
+      <!-- 	];
+      // for item in carList
+      // 	.car-item
+      // 		h3._title= item.name
+      // 		._qty
+      // 			._qty-item
+      // 				+svg("#car", "car-item__icon", '20')
+      // 				span._text 10 А/М В НАЛИЧИИ
+      // 			._qty-item
+      // 				+svg("#clock", "car-item__icon", '20')
+      // 				span._text ЛИЗИНГ А/М
+      //
+      // 		img(src=item.img)._img
+      //
+      // 		._description 2.7 дизель, Common rail, 150 л.с., МКПП, Задний привод
+      //
+      // 		form._form
+      // 			input(value="2" name="id").visually-hidden
+      // 			button.btn.-main._btn.show-modal Получить спец. цену
+      // 			button.btn.-second._btn.show-modal Спец. условия по лизингу
+      // 			button.btn.-second._btn.show-modal Подобрать автомобиль
+      -->
       <section class="questions container">
         <h2 class="questions__header">Есть вопросы?</h2>
         <div class="questions__text">Мы перезвоним вам и ответим на любой вопрос</div>
@@ -144,7 +95,7 @@
       </div>
     </footer>
     <div class="visually-hidden" id="modal-wrapper">
-      <div class="modal shown" id="showForm"><img class="modal__cross" src="../images/dest/cross.png" alt="cross icon">
+      <div class="modal shown" id="showForm"><img class="modal__cross" src="./images/dest/cross.png" alt="cross icon">
         <h3 class="modal__header">Заголовок формы</h3>
         <div class="modal__text">Мы перезвоним вам и ответим на любой вопрос</div>
         <form class="modal__form">

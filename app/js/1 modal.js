@@ -5,7 +5,6 @@ const cross = document.querySelector('.modal__cross');
 const modalOpenBtns = document.querySelectorAll('.show-modal')
 // кнопка отправки сообщения
 const sendBtns = document.querySelectorAll('.send-btn');
-let timer, allow = true // для будущих отключений
 
 // обработчики открытия модального окна
 for(let btn of modalOpenBtns) {
@@ -82,20 +81,27 @@ async function sendData(form) {
     }
 }
 // Отправка данных на сервер
+let urlBase = getBase()
 async function sendToServer(form) {
     let isDisabled = true // флаг отключения кнопки
     disableBtn(form) // отключаем кнопку
+    let result // для использования в функции
+    try {
+        let request = await fetch(urlBase + 'request.php', {
+            method: 'POST',
+            mode: "cors",
+            body: new FormData(form)
+        })
+        result = await request.text();
 
-    let request = await fetch('http://procontext/api/request.php', {
-        method: 'POST',
-        mode: "cors",
-        body: new FormData(form)
-    })
-    let result = await request.text();
-
-    isDisabled = false // снимаем флаг отключения кнопки
-    if(result == 'success') return true
-    return false
+        if(result == 'success') {return true}
+        return false
+    } catch(err) {
+        console.log('ошибка', err)
+        return false
+    } finally {
+        isDisabled = false // снимаем флаг отключения кнопки
+    }
 
     // Отключение кнопки во время запроса на сервер
     function disableBtn(form){
@@ -170,3 +176,9 @@ function chooseModal(type){
     document.getElementById( id[type] ).classList.add('shown');
 }
 
+function getBase(local = true){
+    const localBase = 'http://procontext/php/'
+    const realBase = document.location.origin + '/proContext/api/'
+
+    return local ? localBase : realBase;
+}

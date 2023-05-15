@@ -1,47 +1,50 @@
-- 
-	let carList = [
-		{
-			name: 'Model WHT',
-			img:'images/dest/car1.png'
-		},
-		{
-			name: 'Model BLK',
-			img:'images/dest/car2.png'
-		},
-		{
-			name: 'Model BRN',
-			img:'images/dest/car3.png'
-		},
-		{
-			name: 'Model GRN',
-			img:'images/dest/car4.png'
-		},
-	];
 
 section.cars.container
 	h2._header Модели в наличии
 
 	.cars-list
-		for item in carList
-			.car-item
-				h3._title= item.name
-				._qty
-					._qty-item
-						+svg("#car", "car-item__icon", '20')
-						span._text 10 А/М В НАЛИЧИИ
-					._qty-item
-						+svg("#clock", "car-item__icon", '20')
-						span._text ЛИЗИНГ А/М
 
-				img(src=item.img)._img
+// -
+// 	let carList = [
+// 		{
+// 			name: 'Model WHT',
+// 			img:'images/dest/car1.png'
+// 		},
+// 		{
+// 			name: 'Model BLK',
+// 			img:'images/dest/car2.png'
+// 		},
+// 		{
+// 			name: 'Model BRN',
+// 			img:'images/dest/car3.png'
+// 		},
+// 		{
+// 			name: 'Model GRN',
+// 			img:'images/dest/car4.png'
+// 		},
+// 	];
 
-				._description 2.7 дизель, Common rail, 150 л.с., МКПП, Задний привод
+		// for item in carList
+		// 	.car-item
+		// 		h3._title= item.name
+		// 		._qty
+		// 			._qty-item
+		// 				+svg("#car", "car-item__icon", '20')
+		// 				span._text 10 А/М В НАЛИЧИИ
+		// 			._qty-item
+		// 				+svg("#clock", "car-item__icon", '20')
+		// 				span._text ЛИЗИНГ А/М
+		//
+		// 		img(src=item.img)._img
+		//
+		// 		._description 2.7 дизель, Common rail, 150 л.с., МКПП, Задний привод
+		//
+		// 		form._form
+		// 			input(value="2" name="id").visually-hidden
+		// 			button.btn.-main._btn.show-modal Получить спец. цену
+		// 			button.btn.-second._btn.show-modal Спец. условия по лизингу
+		// 			button.btn.-second._btn.show-modal Подобрать автомобиль
 
-				form._form
-					input(value="2" name="id").visually-hidden
-					button.btn.-main._btn.show-modal Получить спец. цену
-					button.btn.-second._btn.show-modal Спец. условия по лизингу
-					button.btn.-second._btn.show-modal Подобрать автомобиль
 
 
 
