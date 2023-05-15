@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 13 2023 г., 22:44
+-- Время создания: Май 15 2023 г., 10:01
 -- Версия сервера: 5.5.53
 -- Версия PHP: 5.5.38
 
@@ -88,7 +88,7 @@ ALTER TABLE `cars`
 -- AUTO_INCREMENT для таблицы `request`
 --
 ALTER TABLE `request`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
